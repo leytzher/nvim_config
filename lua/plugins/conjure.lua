@@ -2,7 +2,7 @@ return {
   -- Conjure!
   {
     "Olical/conjure",
-    ft = { "clojure", "fennel", "python" }, -- etc
+    ft = { "clojure", "fennel", "python", "common-lisp" }, -- etc
     lazy = true,
     init = function()
       vim.g.maplocalleader = ','
