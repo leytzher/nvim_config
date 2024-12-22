@@ -28,12 +28,12 @@ return {
           "html",
           "htmx",
           "eslint",
-          "tsserver",
           "jsonls",
           "grammarly",
           "jedi_language_server",
           "svelte",
           "zls",
+          "ts_ls",
         }
     })
     end
@@ -47,7 +47,6 @@ return {
       -- Establish communication between lsp and neovim using lspconfig
       lspconfig.lua_ls.setup({capabilities = capabilities})
       lspconfig.clangd.setup({capabilities = capabilities})
-      lspconfig.tsserver.setup({capabilities = capabilities})
       lspconfig.clojure_lsp.setup({capabilities = capabilities})
       lspconfig.arduino_language_server.setup({capabilities = capabilities})
       lspconfig.cssls.setup({capabilities = capabilities})
@@ -65,6 +64,7 @@ return {
       lspconfig.jedi_language_server.setup({capabilities = capabilities})
       lspconfig.svelte.setup({capabilities = capabilities})
       lspconfig.zls.setup({capabilities = capabilities})
+      lspconfig.ts_ls.setup({capabilities = capabilities})
 
       -- use Shift+K to show info of symbol under cursor in a floating window 
       vim.keymap.set('n','K', vim.lsp.buf.hover, {})
