@@ -65,6 +65,7 @@ return {
       lspconfig.svelte.setup({capabilities = capabilities})
       lspconfig.zls.setup({capabilities = capabilities})
       lspconfig.ts_ls.setup({capabilities = capabilities})
+      lspconfig.eslint.setup({capabilities = capabilities})
 
       -- use Shift+K to show info of symbol under cursor in a floating window 
       vim.keymap.set('n','K', vim.lsp.buf.hover, {})

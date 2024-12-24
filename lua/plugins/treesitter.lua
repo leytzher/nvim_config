@@ -9,6 +9,15 @@ return {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate",
     auto_install = true,  -- treesitter will autoinstall if it doesn't have a parser for the language
     highlight = {enable = true},
     indent = {enable = true},
+      ensure_installed={
+        "lua",
+        "javascript",
+        "typescript",
+        "tsx",
+        "html",
+        "css",
+        "json",
+      }
     })
   end
 }
