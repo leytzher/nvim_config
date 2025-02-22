@@ -33,7 +33,10 @@ return {
           "jedi_language_server",
           "svelte",
           "zls",
-          "ts_ls",
+--          "ts_ls",
+          "tsserver",
+          "fortls"
+          --
         }
     })
     end
@@ -64,8 +67,10 @@ return {
       lspconfig.jedi_language_server.setup({capabilities = capabilities})
       lspconfig.svelte.setup({capabilities = capabilities})
       lspconfig.zls.setup({capabilities = capabilities})
-      lspconfig.ts_ls.setup({capabilities = capabilities})
+      --lspconfig.ts_ls.setup({capabilities = capabilities})
+      lspconfig.tsserver.setup({capabilities = capabilities})
       lspconfig.eslint.setup({capabilities = capabilities})
+      lspconfig.fortls.setup({capabilities = capabilities})
 
       -- use Shift+K to show info of symbol under cursor in a floating window 
       vim.keymap.set('n','K', vim.lsp.buf.hover, {})
