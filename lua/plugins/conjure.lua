@@ -4,6 +4,7 @@ return {
     "Olical/conjure",
     ft = { "clojure", "fennel", "python", "common-lisp", "julia" }, -- etc
     lazy = true,
+    branch="main",
     init = function()
       vim.g.maplocalleader = ','
       -- vim.g["conjure#debug"] = true
