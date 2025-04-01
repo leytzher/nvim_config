@@ -31,8 +31,8 @@ return {
 					"jedi_language_server",
 					"svelte",
 					"zls",
-					--          "ts_ls",
-					"tsserver",
+					          "ts_ls",
+--					"tsserver",
 					"fortls",
 					"julials",
 					--
@@ -59,18 +59,16 @@ return {
 			lspconfig.gopls.setup({ capabilities = capabilities })
 			lspconfig.hls.setup({ capabilities = capabilities })
 			lspconfig.html.setup({ capabilities = capabilities })
-			lspconfig.htmx.setup({ capabilities = capabilities })
 			lspconfig.eslint.setup({ capabilities = capabilities })
 			lspconfig.jsonls.setup({ capabilities = capabilities })
 			lspconfig.grammarly.setup({ capabilities = capabilities })
 			lspconfig.jedi_language_server.setup({ capabilities = capabilities })
 			lspconfig.svelte.setup({ capabilities = capabilities })
 			lspconfig.zls.setup({ capabilities = capabilities })
-			--lspconfig.ts_ls.setup({capabilities = capabilities})
-			lspconfig.tsserver.setup({ capabilities = capabilities })
+			lspconfig.ts_ls.setup({capabilities = capabilities})
+			--lspconfig.tsserver.setup({ capabilities = capabilities })
 			lspconfig.eslint.setup({ capabilities = capabilities })
 			lspconfig.fortls.setup({ capabilities = capabilities })
-			lspconfig.mma.setup({ capabilities = capabilities })
 			lspconfig.julials.setup({
 				capabilities = capabilities,
 				on_new_config = function(new_config, _)

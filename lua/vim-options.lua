@@ -12,6 +12,8 @@ vim.cmd("set foldcolumn=1")
 
 -- set leader key
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- set relative numbers
 vim.wo.relativenumber = true
+
