@@ -8,12 +8,12 @@ return {
 	},
 
 	config = function()
-		local obsidian = require(obsidian)
+		local obsidian = require("obsidian")
 		obsidian.setup({
-			workspaces = {
-				name = "WorkshopVault",
-				path = "~/Documents/vaults/WorkshopVault",
-			},
+			workspaces = {{
+				name = "SecondBrain",
+				path = "~/Documents/vaults/SecondBrain",
+			}},
 			completion = {
 				nvim_cmp = true,
 				min_chars = 2, -- completion at 2 chars.
