@@ -16,4 +16,4 @@ vim.g.maplocalleader = " "
 
 -- set relative numbers
 vim.wo.relativenumber = true
-
+vim.opt.laststatus = 3
