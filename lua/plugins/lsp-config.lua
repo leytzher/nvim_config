@@ -27,7 +27,7 @@ return {
 					"html",
 					"eslint",
 					"jsonls",
-					"grammarly",
+					--"grammarly",
 					"jedi_language_server",
 					"svelte",
 					"zls",
