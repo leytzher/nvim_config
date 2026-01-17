@@ -1,6 +1,8 @@
 -- install Lazy.
 -- it will check if lazy is installed; if not, then it will fetch it from github.
 --
+vim.g.maplocalleader = ","
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({

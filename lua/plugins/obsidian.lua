@@ -12,7 +12,8 @@ return {
     obsidian.setup({
       workspaces = { {
         name = "SecondBrain",
-        path = "~/Documents/vaults/2ndBrain",
+        --path = "~/Documents/vaults/2ndBrain",
+        path = "/Users/leytzher/Documents/2ndBrain",
       } },
       completion = {
         nvim_cmp = true,
