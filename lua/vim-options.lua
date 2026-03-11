@@ -16,3 +16,7 @@ vim.g.mapleader = " "
 -- set relative numbers
 vim.wo.relativenumber = true
 vim.opt.laststatus = 3
+
+-- make gf work better for project and library source/header navigation
+vim.opt.path:append("**")
+vim.opt.suffixesadd:append({ ".h", ".hpp", ".hh", ".hxx", ".c", ".cc", ".cpp", ".cxx" })
